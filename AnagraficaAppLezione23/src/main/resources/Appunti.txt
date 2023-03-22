@@ -1,0 +1,30 @@
+Traccia Esercizio
+classe Persona:
+attr:
+-codiceFiscale : str @Id //deve essere di 5 caratteri
+-eta : int //almeno 15
+-cognome : str // @NotNull @NotBlank
+-nome : str    // @NotNull @NotBlank
+
+met:
++lista di persone con eta maggiore di 25 anni
+
+
+________________________________________________
+nell'interfaccia del repository si possono usare le query per velocizzare alcune operazioni
+Sinassti:
+
+    @Query(value = "SELECT * FROM Persona")     //seleziona tutte le persone nel DB
+    Collection<Persona> ritornaAllPersone();    //Firma del metodo da richiamare per eseguire la query
+
+
+mkyong.com
+________________________________________________
+@RequestMapping("/api/")  // PersonaController riga 16
+tutte le rotte cominceranno con /api/ => ES: localhost:8080/api/add-persona
+________________________________________________
+Collection
+classi derivate da Collection => List
+classi derivate da List => Vector, 
+
+
